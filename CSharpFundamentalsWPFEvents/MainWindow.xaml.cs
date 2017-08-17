@@ -23,6 +23,13 @@ namespace CSharpFundamentalsWPFEvents
         public MainWindow()
         {
             InitializeComponent();
+
+            MyButton.Click += MyButton_Click;
+        }
+
+        private void MyButton_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }
