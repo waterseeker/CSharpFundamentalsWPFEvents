@@ -30,7 +30,7 @@ namespace CSharpFundamentalsWPFEvents
         private void MyButton_Click(object sender, RoutedEventArgs e)
         {
             //throw new NotImplementedException();
-            MyLabel.Content = " Hello World!";
+            MyLabel.Content = "You clicked mah button!!";
         }
     }
 }
