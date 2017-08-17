@@ -25,12 +25,21 @@ namespace CSharpFundamentalsWPFEvents
             InitializeComponent();
 
             MyButton.Click += MyButton_Click;
+            MyButton.Click += MyButton_IClickedThis;
         }
 
         private void MyButton_Click(object sender, RoutedEventArgs e)
         {
             //throw new NotImplementedException();
             MyLabel.Content = "You clicked mah button!!";
+        }
+
+        //having another click event that is affecting the same thing (the label content in this example)
+        //you'll get the last value. They both fire off, but you'll only see the last one. 
+        private void MyButton_IClickedThis(object sender, RoutedEventArgs e)
+        {
+            //throw new NotImplementedException();
+            MyLabel.Content = "You clicked mah button again!!";
         }
     }
 }
